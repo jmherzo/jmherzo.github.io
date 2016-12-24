@@ -1,0 +1,355 @@
+/*
+///////////////////////////////////////////////////
+
+Project Name: Pricing Cards Minimal
+Author: FREEHTML5.co
+Website: http://freehtml5.co
+URL: http://freehtml5.co/cards/drag-drop
+License: Creative Commons Attribution 3.0 License
+
+///////////////////////////////////////////////////
+*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+///////////////////////////////////////////////////
+1.0 BASE
+///////////////////////////////////////////////////
+*/
+html.mobile-menu-expanded {
+  overflow: hidden;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: gray;
+  font-weight: 400;
+}
+@media screen and (max-width: 480px) {
+  body {
+    min-width: 320px;
+    float: left;
+    width: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  color: #262626;
+}
+
+p {
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+a {
+  color: #1784fb;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+a:hover, a:focus, a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+.btn {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.btn.btn-md {
+  padding: 10px 20px !important;
+}
+.btn.btn-lg {
+  padding: 18px 36px !important;
+}
+.btn:hover, .btn:active, .btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+.btn-outline {
+  background: none;
+  border: 2px solid gray;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  box-shadow: none;
+}
+
+/* Utilities */
+.fh5co-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.p-b {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none !important;
+    width: 100% !important;
+    display: block !important;
+  }
+}
+
+/* PRICING */
+
+/*MOD 3 - TAMAÑO DE TODA LA PANTALLA*/
+.fh5co-pricing-style-1,
+.fh5co-pricing-style-2 {
+  padding: 3em 0;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-pricing-style-1,
+  .fh5co-pricing-style-2 {
+    padding: 3em 0;
+  }
+}
+
+/*COLOR DE FONDO DEL CONTAINER*/
+.fh5co-pricing-style-2 {
+  background: #3498db;
+}
+.fh5co-pricing-style-2 .fh5co-heading {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+}
+.fh5co-pricing-style-2 p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+
+/*MOD 1 - MODIFIQUE EL TAMAÑO DEL MARGIN PARA OBTENER LA PANTALLA COMPLETA*/
+.fh5co-pricing-style-2 .pricing {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.fh5co-pricing-style-2 .pricing-item {
+  font-family: "Montserrat", Arial, sans-serif;
+  padding: 2em 3em;
+  margin: 1em;
+  color: #262b38;
+  background: #fff;
+  cursor: default;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .fh5co-pricing-style-2 .pricing-item {
+    margin: 1.5em 0;
+  }
+  .fh5co-pricing-style-2 .pricing-item.pricing-item--featured {
+    z-index: 10;
+    margin: 0;
+    font-size: 1.15em;
+  }
+}
+.fh5co-pricing-style-2 .pricing-title {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/*COLOR DEL PRECIOS*/
+
+/*Empresa*/
+.fh5co-pricing-style-2 .pricing-price-1 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #19B5FE;
+  color: #2ecc71;
+  position: relative;
+  z-index: 100;
+}
+
+/*Emprendedor*/
+.fh5co-pricing-style-2 .pricing-price-2 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #2ecc71;
+  position: relative;
+  padding: .2em 0 .7em;
+  z-index: 100;
+}
+
+/*Profesional*/
+.fh5co-pricing-style-2 .pricing-price-3 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #2ecc71;
+  position: relative;
+  z-index: 100;
+}
+
+.fh5co-pricing-style-2 .pricing-currency {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+.fh5co-pricing-style-2 .pricing-period {
+  font-size: 16px;
+  display: block;
+  padding: 0 0 0 0.5em;
+  color: #2ecc71;
+  text-align: left;
+  font-weight: 700;
+}
+.fh5co-pricing-style-2 .pricing-sentence {
+  margin: 0 0 1em 0;
+  padding: 0 0 0;
+  font-size: 16px;
+  text-align: center;
+  color: #999999;
+}
+.fh5co-pricing-style-2 .pricing-feature-list {
+  font-size: 0.95em;
+  margin: 0;
+  padding: .5em .5em .5em;
+  list-style: none;
+}
+.fh5co-pricing-style-2 .pricing-feature {
+  padding: 0.15em 0;
+}
+.fh5co-pricing-style-2 .pricing-action {
+  font-weight: bold;
+  margin-top: auto;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 5px;
+  background: #3498db;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.fh5co-pricing-style-2 .pricing-action:hover,
+.fh5co-pricing-style-2 .pricing-action:focus {
+  background-color: #4F5F56;
+}
+
+/* BOTONES DE PRECIOS*/
+
+.btn-success {
+  background: transparent;
+  background: #2ecc71;
+  color: white;
+  border: 2px solid #2ecc71;
+}
+.btn-success:hover, 
+.btn-success:focus, 
+.btn-success:active {
+  background: #27ae60 !important;
+  border-color: #27ae60 !important;
+}
+
+.btn-outline{
+  background: transparent;
+  background: #2ecc71;
+  color: white;
+  border: 2px solid #2ecc71;
+}
+
+ .btn-outline:hover,
+ .btn-outline:focus, 
+ .btn-outline:active {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: #fff;
+}
+
+.btn-outline-1{
+  background: transparent;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+}
+ .btn-outline-1:hover,
+ .btn-outline-1:focus, 
+ .btn-outline-1:active {
+  background: transparent;
+  color: #19B5FE;
+}
+
+/* FIN DE BOTONES DE PRECIOS*/
+
+/* 
+///////////////////////////////////////////////////
+PRECIOS
+///////////////////////////////////////////////////
+*/
+
+
+/*# sourceMappingURL=cards.css.map */
