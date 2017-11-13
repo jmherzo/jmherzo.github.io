@@ -1,0 +1,26 @@
+<?php
+
+$name=$_POST['name'];
+$Email=$_POST['email'];
+$telefono=$_POST['phone'];
+$message=$_POST['message'];
+
+    
+    $body .= "Name: " . $name . "\n"; 
+    $body .= "Email: " . $Email . "\n"; 
+    $body .= "Website: IMB Sports Academy\n"; 
+    $body .= "Message: " . $message . "\n"; 
+    $body .= "Telefono:" . $telefono . "\n"; 
+    //replace with your email
+    mail("jmherzo@gmail.com","IMB SPORTS ACADEMY",$body); 
+
+  
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>alert("Su mensaje ha sido enviado, nos comunicaremos a la brevedad.");</script>
+<meta HTTP-EQUIV="REFRESH" content="0; url=../index.html"> 
+
+</head>
