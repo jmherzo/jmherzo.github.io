@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Agendar cita - Fisiokalubi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/agency.css">
+    <!-- Bootstrap Date-Picker Plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <span>
+            <a href="#intro-page" class="pull-left page-scroll"><img src="img/logo-nav.jpg"></a> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <!-- <a class="navbar-brand page-scroll" href="#page-top">Fisiokalubi</a>-->
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="./index.html#intro-page">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="./index.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="./index.html#team">Fisioterapeuta</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#schedule">Agendar</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="./index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="schedule" class="bg-light-gray">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Haz una cita en Fisiokalubi</h2>
+                    <h3 class="section-subheading text-muted">Es muy sencillo y muy rápido.</h3>
+                </div>
+            </div>
+
+            <div clas="row">
+                <!--1st column-->
+                <div class="col-md-6 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                    <div class="mapi">
+                        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.0331227538204!2d-98.24351968537441!3d19.018262058727615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc74296a8201f%3A0x8888d7339559ccd4!2sTecnol%C3%B3gico+de+Monterrey+Campus+Puebla!5e0!3m2!1ses!2smx!4v1476351810851" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwiddth="0" style="border:0" allowfullscreen></iframe>
+                        <br />
+                        <small>
+                            <a href="https://goo.gl/maps/JyyQWXGJ4aG2"></a>
+                        </small>
+                    </div>
+                </div>
+                <!--2nd column-->
+                <div class="col-md-4 col-sm-5" >
+                    <form role="form" id="contactFormAgenda"> 
+
+                        <!-- Nombre completo-->
+                        <div class="form-group">
+                            <label class="h4" for="name">Nombre Completo</label>  
+                            <input id="name" type="text" placeholder="Escribe tu nombre completo" class="form-control" required>
+                        </div>
+
+                        <!-- Correo electronico-->
+                        <div class="form-group">
+                            <label class="h4" for="email">Correo electrónico</label>  
+                            <input id="email" type="email" placeholder="correo@ejemplo.com" class="form-control" required>
+                        </div>
+
+                        <!-- Fecha-->
+                        <div class="form-group" > 
+                            <label class="h4" for="date">Fecha</label>
+                            <input id="dateSelect" type="text" placeholder="DD/MM/AA" class="form-control"  name="date" required>
+                        </div>
+
+                        <!-- Celular-->
+                        <div class="form-group">
+                            <label class="h4" for="phone">Celular</label>  
+                            <input id="phone" type="text" placeholder="9925225312" class="form-control" required>
+                        </div>
+
+                        <!-- Seleccionar servicios-->
+                        <div class="form-group">
+                            <label class="h4" for="serviceSelect">Servicio</label>
+                            <select id="serviceSelect" class="form-control" required>
+                                <option >Ninguno</option>
+                                <option >Estimulación Temprana</option>
+                                <option >Rehabilitación física integral</option>
+                                <option >Asesoría Terapéutica</option>
+                                <option >Atención a parálisis cerebral</option>
+                                <option >Masaje relajante</option>
+                                <option >Atención Neurológica</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                        <button type="submit" id="form-submit" class="btn-success btn btn-xl ">Agendar</button>
+                        </div>
+                        <div id="msgSubmit" class="h3 text-center hidden">Has enviado tu reservación, en breve te responderemos el mensaje</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Fisiokalubi 2016</span>
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="./index.html#services" class="page-scroll">Servicios</a>
+                        </li>
+                        <li><a href="./index.html#contact"class="page-scroll">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/agency.js"></script>
+<script type="text/javascript" src="js/bookingScript.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.es.js" charset="UTF-8"></script>
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.row form').length>0 ? $('.row form').parent() : "body";
+      var options={
+        format: 'dd/mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+        language: 'es',
+        orientation: 'top',
+        disableTouchKeyboard: true,
+        todayBtn: true,
+        startDate: 'Beginning of time'
+      };
+      date_input.datepicker(options);
+    });
+</script>
+
+</body>
+
+</html>
